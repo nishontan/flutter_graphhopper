@@ -1,5 +1,6 @@
 package np.com.naxa.route.graphhoper_route.downloader;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -377,6 +378,7 @@ public class MainActivity extends Activity {
         loadGraphStorage();
     }
 
+    @SuppressLint("StaticFieldLeak")
     void loadGraphStorage() {
         logUser("loading graph (" + Constants.VERSION + ") ... ");
         new GHAsyncTask<Void, Void, Path>() {
