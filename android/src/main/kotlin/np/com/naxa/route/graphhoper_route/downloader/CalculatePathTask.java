@@ -8,6 +8,10 @@ import android.util.Log;
 import com.graphhopper.GHRequest;
 import com.graphhopper.GHResponse;
 import com.graphhopper.GraphHopper;
+import com.graphhopper.PathWrapper;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
 
 import java.io.File;
 import java.util.List;
@@ -49,6 +53,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
             log("found graph " + tmpHopp.getGraphHopperStorage().toString() + ", nodes:" + tmpHopp.getGraphHopperStorage().getNodes());
             GHRequest request = new GHRequest(lists[0].get(0), lists[0].get(1), lists[0].get(2), lists[0].get(3));
             GHResponse route = tmpHopp.route(request);
+
             path = route.toString();
         } catch (Exception e) {
             listener.onFailed(e.getMessage());
@@ -57,6 +62,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
 
         return path;
     }
+
 
     @Override
     protected void onPostExecute(String s) {

@@ -37,6 +37,9 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
 
     private fun getRouteAsLatLng(call: MethodCall, result: Result) {
         val points: List<Double>? = call.argument<List<Double>>("points")
+        assert(points != null)
+        assert(points?.size == 4)
+
         CalculatePathTask(object : CalculatePathTask.OnCalculateTaskTaskListener {
             override fun onFailed(message: String?) {
                 result.error("", message, "")
@@ -49,7 +52,6 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
 
 
     }
-
 
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
