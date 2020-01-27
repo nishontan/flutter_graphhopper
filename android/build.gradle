@@ -1,0 +1,64 @@
+group 'np.com.naxa.route.graphhoper_route'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    ext.kotlin_version = '1.3.50'
+    repositories {
+        google()
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/groups/public/" }
+    }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    defaultConfig {
+        minSdkVersion 16
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation(group: 'com.graphhopper', name: 'graphhopper-core', version: '1.0-SNAPSHOT') {
+        exclude group: 'com.google.protobuf', module: 'protobuf-java'
+        exclude group: 'org.openstreetmap.osmosis', module: 'osmosis-osm-binary'
+        exclude group: 'org.apache.xmlgraphics', module: 'xmlgraphics-commons'
+    }
+
+    implementation 'org.mapsforge:vtm:0.13.0'
+    implementation 'org.mapsforge:vtm-android:0.13.0'
+    implementation 'org.mapsforge:vtm-android:0.13.0:natives-armeabi-v7a'
+    implementation 'org.mapsforge:vtm-android:0.13.0:natives-arm64-v8a'
+    implementation 'org.mapsforge:vtm-android:0.13.0:natives-x86'
+    implementation 'org.mapsforge:vtm-android:0.13.0:natives-x86_64'
+    implementation 'org.mapsforge:vtm-jts:0.13.0'
+    implementation 'org.mapsforge:vtm-themes:0.13.0'
+    implementation 'com.caverock:androidsvg:1.4'
+
+    implementation 'org.slf4j:slf4j-api:1.7.30'
+    implementation 'org.slf4j:slf4j-android:1.7.30'
+
+}
