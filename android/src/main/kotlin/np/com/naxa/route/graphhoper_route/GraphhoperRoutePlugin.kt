@@ -36,11 +36,6 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
     }
 
     private fun getRouteAsLatLng(call: MethodCall, result: Result) {
-        if (!fileExist("")) {
-            result.error("Routing file not found", "Routing file not found", "Routing file not found")
-            return
-        }
-
         val points: List<Double>? = call.argument<List<Double>>("points")
         CalculatePathTask(object : CalculatePathTask.OnCalculateTaskTaskListener {
             override fun onFailed(message: String?) {
@@ -50,14 +45,12 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
             override fun onPathCalculated(path: String?) {
                 result.success(path)
             }
-        }).execute(points)
+        }).execute(listOf(27.7172, 85.3240, 28.2096, 83.9856))
 
 
     }
 
-    fun fileExist(fname: String): Boolean {
-        return false
-    }
+
 
     override fun onDetachedFromEngine(@NonNull binding: FlutterPlugin.FlutterPluginBinding) {
     }

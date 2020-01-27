@@ -39,8 +39,9 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
         log(str);
     }
 
+    @SafeVarargs
     @Override
-    protected String doInBackground(List<Double>... lists) {
+    protected final String doInBackground(List<Double>... lists) {
         String path = null;
         try {
             GraphHopper tmpHopp = new GraphHopper().forMobile();

@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a146fdb9-9ca8-44cd-8254-4a90b57f39a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/np/com/naxa/route/graphhoper_route_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/np/com/naxa/route/graphhoper_route_example/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/graphhoper_route.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/graphhoper_route.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.pub/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -58,8 +55,8 @@
         <option value="$PROJECT_DIR$/lib/graphhoper_route.dart" />
         <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/MainActivity.java" />
-        <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" />
         <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.kt" />
+        <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" />
       </list>
     </option>
   </component>
@@ -134,7 +131,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1920" height="1032" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.37673426" />
       <window_info id="Captures" order="1" side_tool="true" />
