@@ -102,12 +102,17 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
 
             ArrayList<ArrayList<Double>> points = new ArrayList<>();
             for (GHPoint3D ghPoint3D : ar.getPoints()) {
-                ArrayList<Double> point = new ArrayList<>();
-                point.add(ghPoint3D.getLon());
-                point.add(ghPoint3D.getLat());
-                points.add(point);
+                ArrayList<Double> coordinates = new ArrayList<>();
+                coordinates.add(ghPoint3D.getLon());
+                coordinates.add(ghPoint3D.getLat());
+                points.add(coordinates);
             }
-            jsonPath.put("points", points);
+            JSONObject jsonPoint = new JSONObject();
+            jsonPoint.put("type", "LineString");
+            jsonPoint.put("coordinates", points);
+
+            jsonPath.put("points", jsonPoint);
+
             paths.put(jsonPath);
         }
 
