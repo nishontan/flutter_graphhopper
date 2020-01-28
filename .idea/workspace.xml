@@ -4,10 +4,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a146fdb9-9ca8-44cd-8254-4a90b57f39a5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java" afterDir="false" />
-    </list>
+    <list default="true" id="a146fdb9-9ca8-44cd-8254-4a90b57f39a5" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.pub/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/example/.pub/" />
@@ -23,20 +20,20 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="30">
+              <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
+            <state relative-caret-position="120">
+              <caret line="186" column="9" lean-forward="true" selection-start-line="186" selection-start-column="9" selection-end-line="186" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -82,9 +79,9 @@
         <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.kt" />
         <option value="$PROJECT_DIR$/lib/graphhoper_route.dart" />
         <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
       </list>
     </option>
   </component>
@@ -99,8 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,7 +107,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,9 +166,9 @@
       <window_info anchor="bottom" id="Run" order="1" weight="0.44395116" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Logcat" order="4" weight="0.48504984" />
+      <window_info anchor="bottom" id="Logcat" order="4" weight="0.48501664" />
       <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info anchor="bottom" id="Terminal" order="6" weight="0.65891474" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.6581576" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
@@ -276,17 +273,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="120">
+          <caret line="186" column="9" lean-forward="true" selection-start-line="186" selection-start-column="9" selection-end-line="186" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java">
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
+        <state relative-caret-position="30">
+          <caret line="2" column="14" selection-start-line="2" selection-start-column="14" selection-end-line="2" selection-end-column="14" />
         </state>
       </provider>
     </entry>

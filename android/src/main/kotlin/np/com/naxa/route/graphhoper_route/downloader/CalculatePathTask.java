@@ -63,6 +63,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
             GHResponse route = tmpHopp.route(request);
             path = mapGHResponseToJSON(route);
         } catch (Exception e) {
+            System.out.println(e);
             e.printStackTrace();
         }
 
