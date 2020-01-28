@@ -9,8 +9,10 @@ import com.graphhopper.GHRequest;
 import com.graphhopper.GHResponse;
 import com.graphhopper.GraphHopper;
 import com.graphhopper.PathWrapper;
+import com.graphhopper.util.Helper;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
@@ -53,8 +55,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
             log("found graph " + tmpHopp.getGraphHopperStorage().toString() + ", nodes:" + tmpHopp.getGraphHopperStorage().getNodes());
             GHRequest request = new GHRequest(lists[0].get(0), lists[0].get(1), lists[0].get(2), lists[0].get(3));
             GHResponse route = tmpHopp.route(request);
-
-            path = route.toString();
+            path = mapGHResponseToJSON(route);
         } catch (Exception e) {
             listener.onFailed(e.getMessage());
             e.printStackTrace();
@@ -63,6 +64,41 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
         return path;
     }
 
+    private String mapGHResponseToJSON(GHResponse route) throws JSONException {
+
+        boolean enableElevation = true;
+        boolean calcPoints = true;
+        boolean pointsEncoded = false;
+
+        JSONObject json = new JSONObject();
+        json.put("hints", route.getHints());
+        JSONArray array = new JSONArray();
+        json.put("paths", array);
+        for (PathWrapper ar : route.getAll()) {
+            JSONObject jsonPath = new JSONObject();
+            jsonPath.put("distance", Helper.round(ar.getDistance(), 3));
+            jsonPath.put("weight", Helper.round6(ar.getRouteWeight()));
+            jsonPath.put("time", ar.getTime());
+            jsonPath.put("transfers", ar.getNumChanges());
+            if (!ar.getDescription().isEmpty()) {
+                jsonPath.put("description", ar.getDescription());
+            }
+            jsonPath.put("points_encoded", pointsEncoded);
+            if (ar.getPoints().getSize() >= 2) {
+                jsonPath.put("bbox", ar.calcBBox2D());
+            }
+            jsonPath.put("points", ar.getPoints().toLineString(enableElevation));
+
+            jsonPath.put("instructions", ar.getInstructions());
+            jsonPath.put("legs", ar.getLegs());
+            jsonPath.put("details", ar.getPathDetails());
+            jsonPath.put("ascend", ar.getAscend());
+            jsonPath.put("descend", ar.getDescend());
+
+            array.put(jsonPath);
+        }
+        return json.toString();
+    }
 
     @Override
     protected void onPostExecute(String s) {
