@@ -1,8 +1,7 @@
 import 'dart:async';
+import 'dart:io' show Platform;
 
 import 'package:flutter/services.dart';
-import 'dart:io' show Platform;
-import 'dart:io' as io;
 
 class GraphhoperRoute {
   static const MethodChannel _channel = const MethodChannel('graphhoper_route');
