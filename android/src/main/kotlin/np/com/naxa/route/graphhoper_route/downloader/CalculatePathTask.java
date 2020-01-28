@@ -63,7 +63,6 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
             GHResponse route = tmpHopp.route(request);
             path = mapGHResponseToJSON(route);
         } catch (Exception e) {
-            listener.onFailed(e.getMessage());
             e.printStackTrace();
         }
 
@@ -181,7 +180,11 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
     @Override
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
-        listener.onPathCalculated(s);
+        if (s == null) {
+            listener.onFailed(e.getMessage());
+        } else {
+            listener.onPathCalculated(s);
+        }
     }
 
     private File getMapFolder() {
