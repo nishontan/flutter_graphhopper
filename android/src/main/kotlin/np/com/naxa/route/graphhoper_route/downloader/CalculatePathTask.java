@@ -181,7 +181,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
     protected void onPostExecute(String s) {
         super.onPostExecute(s);
         if (s == null) {
-            listener.onFailed(e.getMessage());
+            listener.onFailed("{'message':'failed to load'}");
         } else {
             listener.onPathCalculated(s);
         }

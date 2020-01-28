@@ -15,7 +15,7 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
 
 
     override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-        val channel = MethodChannel(flutterPluginBinding.getFlutterEngine().getDartExecutor(), "graphhoper_route")
+        val channel = MethodChannel(flutterPluginBinding.flutterEngine.dartExecutor, "graphhoper_route")
         channel.setMethodCallHandler(GraphhoperRoutePlugin());
     }
 
@@ -42,8 +42,7 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
 
         CalculatePathTask(object : CalculatePathTask.OnCalculateTaskTaskListener {
             override fun onFailed(message: String?) {
-
-//                result.error("", message, "")
+                result.error("1", message, "")
             }
 
             override fun onPathCalculated(path: String?) {
