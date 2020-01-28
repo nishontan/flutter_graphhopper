@@ -112,6 +112,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
             jsonPoint.put("coordinates", points);
 
             jsonPath.put("points", jsonPoint);
+            jsonPath.put("bbox", ar.calcBBox2D().toGeoJson());
 
             paths.put(jsonPath);
         }
@@ -151,7 +152,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
                 jsonPath.put("fare", NumberFormat.getCurrencyInstance(Locale.ROOT).format(ar.getFare()));
             }
 
-//            jsonPath.putPOJO("points", ar.getPoints().toLineString(enableElevation));
+            jsonPath.putPOJO("points", ar.getPoints().toLineString(enableElevation));
 
 
         }
