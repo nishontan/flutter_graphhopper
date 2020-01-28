@@ -48,6 +48,10 @@ dependencies {
         exclude group: 'org.apache.xmlgraphics', module: 'xmlgraphics-commons'
     }
 
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.9.9'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.2.3'
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.2.3'
+
     implementation 'org.mapsforge:vtm:0.13.0'
     implementation 'org.mapsforge:vtm-android:0.13.0'
     implementation 'org.mapsforge:vtm-android:0.13.0:natives-armeabi-v7a'

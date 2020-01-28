@@ -42,7 +42,8 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
 
         CalculatePathTask(object : CalculatePathTask.OnCalculateTaskTaskListener {
             override fun onFailed(message: String?) {
-                result.error("", message, "")
+
+//                result.error("", message, "")
             }
 
             override fun onPathCalculated(path: String?) {
