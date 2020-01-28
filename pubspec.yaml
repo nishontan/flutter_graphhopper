@@ -1,6 +1,6 @@
 name: graphhoper_route
 description: Offline routing using Graphhopper JAVA lib on Android
-version: 0.0.5
+version: 0.0.6
 homepage: https://github.com/nishontan
 
 environment:
