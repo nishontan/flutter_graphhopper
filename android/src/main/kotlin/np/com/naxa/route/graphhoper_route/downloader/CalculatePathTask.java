@@ -91,8 +91,8 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
         JSONObject json = new JSONObject();
         JSONArray paths = new JSONArray();
 
-        json.put("hints", "");
-        json.put("info", "");
+//        json.put("hints", "");
+//        json.put("info", "");
         json.put("paths", paths);
 
         JSONObject jsonPath = new JSONObject();
