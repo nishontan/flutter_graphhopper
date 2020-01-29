@@ -10,6 +10,7 @@ import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.JsonNodeFactory;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -65,6 +66,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
         } catch (Exception e) {
             System.out.println(e);
             e.printStackTrace();
+            listener.onFailed("{'message':'failed to load'}");
         }
 
         return path;
@@ -88,6 +90,7 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
 
     private String mapGHResponseToJSON(GHResponse ghRsp) throws JSONException {
 
+
         JSONObject json = new JSONObject();
         JSONArray paths = new JSONArray();
 
@@ -100,12 +103,12 @@ public class CalculatePathTask extends AsyncTask<List<Double>, Void, String> {
             jsonPath.put("distance", ar.getDistance());
             jsonPath.put("time", ar.getTime());
 
-            ArrayList<ArrayList<Double>> points = new ArrayList<>();
+            JSONArray points = new JSONArray();
             for (GHPoint3D ghPoint3D : ar.getPoints()) {
-                ArrayList<Double> coordinates = new ArrayList<>();
-                coordinates.add(ghPoint3D.getLon());
-                coordinates.add(ghPoint3D.getLat());
-                points.add(coordinates);
+                JSONArray coordinates = new JSONArray();
+                coordinates.put(ghPoint3D.getLon());
+                coordinates.put(ghPoint3D.getLat());
+                points.put(coordinates);
             }
             JSONObject jsonPoint = new JSONObject();
             jsonPoint.put("type", "LineString");
