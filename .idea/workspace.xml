@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a146fdb9-9ca8-44cd-8254-4a90b57f39a5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/task/CalculatePathTask.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/example/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/android/app/src/main/kotlin/np/com/naxa/route/graphhoper_route_example/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/example/android/app/src/main/kotlin/np/com/naxa/route/graphhoper_route_example/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/example/lib/main.dart" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.pub/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -21,23 +24,50 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="8bf726e3" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_22" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pubspec.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="300">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java">
+        <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="111" column="48" lean-forward="true" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="48" />
+            <state relative-caret-position="330">
+              <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/graphhoper_route.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -63,9 +93,10 @@
       <find>onMethodCall</find>
       <find>route</find>
       <find>author</find>
-      <find>getRouteAsLatLng</find>
       <find>onPost</find>
       <find>paths</find>
+      <find>getRouteAsLatLng</find>
+      <find>onFailed</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -79,14 +110,14 @@
         <option value="$PROJECT_DIR$/android/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/android/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/example/lib/main.dart" />
         <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/MainActivity.java" />
         <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.kt" />
         <option value="$PROJECT_DIR$/lib/graphhoper_route.dart" />
-        <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
-        <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java" />
+        <option value="$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt" />
+        <option value="$PROJECT_DIR$/example/lib/main.dart" />
       </list>
     </option>
   </component>
@@ -105,7 +136,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="flutter.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -141,6 +172,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1523" height="1032" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.29212254" />
       <window_info id="Captures" order="1" side_tool="true" />
@@ -152,12 +184,12 @@
       <window_info id="Capture Tool" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Dart Analysis" order="0" />
-      <window_info anchor="bottom" id="Run" order="1" weight="0.44395116" />
+      <window_info anchor="bottom" id="Run" order="1" weight="0.44370124" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Android Profiler" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Logcat" order="4" weight="0.48501664" />
       <window_info anchor="bottom" id="Debug" order="5" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="6" visible="true" weight="0.29431438" />
+      <window_info anchor="bottom" id="Terminal" order="6" weight="0.29431438" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Find" order="9" />
@@ -215,20 +247,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/MainActivity.java" />
     <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.kt" />
-    <entry file="file://$PROJECT_DIR$/lib/graphhoper_route.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/graphhoper_route_test.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -243,17 +261,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pubspec.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="300">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -269,10 +280,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/GraphhoperRoutePlugin.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/android/src/main/kotlin/np/com/naxa/route/graphhoper_route/downloader/CalculatePathTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="111" column="48" lean-forward="true" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="48" />
+        <state relative-caret-position="210">
+          <caret line="66" column="31" selection-start-line="66" selection-start-column="31" selection-end-line="66" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/graphhoper_route.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="16" column="33" lean-forward="true" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
         </state>
       </provider>
     </entry>

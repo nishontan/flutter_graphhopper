@@ -26,7 +26,7 @@ class _MyAppState extends State<MyApp> {
       platformVersion =
           await GraphhoperRoute.getRouteAsLatLng(points: [1, 2, 3, 4]);
     } on PlatformException {
-      platformVersion = 'Failed to get route';
+      platformVersion = 'Failed';
     }
 
     if (!mounted) return;
@@ -41,10 +41,16 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Route fetch example'),
         ),
-        body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+        body: SingleChildScrollView(
+          child: Text(_platformVersion),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.refresh),
+          onPressed: () {
+            initPlatformState();
+          },
         ),
       ),
     );

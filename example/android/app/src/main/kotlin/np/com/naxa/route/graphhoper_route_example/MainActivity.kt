@@ -1,12 +1,9 @@
 package np.com.naxa.route.graphhoper_route_example
 
-import android.os.Bundle
-import android.util.Log
-import androidx.annotation.NonNull;
+import androidx.annotation.NonNull
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.engine.FlutterEngine
 import io.flutter.plugins.GeneratedPluginRegistrant
-import np.com.naxa.route.graphhoper_route.downloader.CalculatePathTask
 
 class MainActivity : FlutterActivity() {
     override fun configureFlutterEngine(@NonNull flutterEngine: FlutterEngine) {

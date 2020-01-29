@@ -7,7 +7,7 @@ import io.flutter.plugin.common.MethodChannel
 import io.flutter.plugin.common.MethodChannel.MethodCallHandler
 import io.flutter.plugin.common.MethodChannel.Result
 import io.flutter.plugin.common.PluginRegistry.Registrar
-import np.com.naxa.route.graphhoper_route.downloader.CalculatePathTask
+import np.com.naxa.route.graphhoper_route.downloader.task.CalculatePathTask
 
 
 /** GraphhoperRoutePlugin */
@@ -42,10 +42,12 @@ class GraphhoperRoutePlugin : FlutterPlugin, MethodCallHandler {
 
         CalculatePathTask(object : CalculatePathTask.OnCalculateTaskTaskListener {
             override fun onFailed(message: String?) {
+                print("onFailed $message")
                 result.error("1", message, "")
             }
 
             override fun onPathCalculated(path: String?) {
+                print(path)
                 result.success(path)
             }
         }).execute(listOf(27.7172, 85.3240, 28.2096, 83.9856))
